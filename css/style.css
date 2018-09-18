@@ -1,0 +1,20 @@
+/*===================================
+    NAVIGATION
+===================================*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba( 255, 255, 255, 0) !important;
+}
+
+/*===================================
+    JUMBOTRON
+===================================*/
+
+.jumbotron {
+    min-height: 100vh;
+    background: url("http://images.pixieset.com/19859321/c42678bcf5d3a9e068117210573a5a6e-cover.jpg");
+    background-size: cover;
+}
