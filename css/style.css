@@ -40,6 +40,21 @@ p {
     color: rgba(161, 120, 114, 1);
 }
 
+.btn-mauve {
+    color: rgba(161, 120, 114, 1);
+    border-color: rgba(161, 120, 114, 1);
+}
+
+.btn-mauve:hover {
+    background-color: rgba(161, 120, 114, 1);
+    color: #fff;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 /*===================================
     NAVIGATION
@@ -92,9 +107,22 @@ p {
 
 .jumbotron {
     min-height: 100vh;
+    margin-bottom: 0;
     background: url("http://images.pixieset.com/19859321/c42678bcf5d3a9e068117210573a5a6e-cover.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(161,120,114,1);
+    position: absolute;
+    bottom: -25px;
+    transform: skewY(-2deg);
 }
 
 /*===================================
@@ -106,18 +134,22 @@ p {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
+    position: relative;
+    background: rgba(161,120,114,1);
+    color: #fff;
 }
 
-.save-the-date p,
-.save-the-date a {
+.save-the-date i {
+    color: #FFF;
+    font-size: 2.5em;
+}
+
+.save-the-date p {
     font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: .9rem;
-}
-
-.save-the-date a {
-    color: purple;
+    /* color: rgba(161,120,114,1); */
 }
 
 .save-the-date .section-heading {
@@ -125,23 +157,45 @@ p {
     font-size: 1.5rem;
 }
 
-#ceremony,
-#reception,
-#accommodations {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+/*===================================
+    CEREMONY
+===================================*/
 
 #ceremony {
-    background: linear-gradient(rgba(161, 120, 114, .6), rgba(161, 120, 114, .6)),
-                url('../img/ring.jpg') no-repeat;
-    background-position: 25% 75%;
-    background-size: cover;
-    color: #fff;
+    text-align: center;
+    color: #333;
 }
 
-#ceremony p {
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.content p {
+    margin: 1.5rem 0;
     width: 80%;
+}
+
+/*===================================
+    RECEPTION
+===================================*/
+
+#reception {
+    text-align: center;
+    color: #333;
+}
+
+#reception .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -150,11 +204,40 @@ p {
 ===================================*/
 
 #accommodations {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(rgba(90, 90, 90, .7), rgba(90, 90, 90, .8)),
+                url('../img/capitol.jpg') no-repeat center;
+    background-size: cover;
     color: #fff;
-    background: rgba(161, 120, 114, 1);
 }
 
-#accommodations .col-header {
+#accommodations h3 {
     font-weight: 700;
-    text-transform: uppercase;
+}
+
+.hotel-info {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hotel-info a:first-child {
+    margin-right: 20px;
+}
+
+/*===================================
+    MEDIA QUERIES
+===================================*/
+
+@media screen and (min-width: 768px) {
+
+    .save-the-date .section-heading {
+        font-size: 2em;
+    }
+
+    #reception .row {
+        flex-direction: row-reverse;
+    }
 }
