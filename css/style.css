@@ -108,8 +108,8 @@ p {
 .jumbotron {
     min-height: 100vh;
     margin-bottom: 0;
-    background: url("http://images.pixieset.com/19859321/c42678bcf5d3a9e068117210573a5a6e-cover.jpg") no-repeat;
-    background-position: bottom;
+    background: url('../img/lake.jpg') no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
 }
@@ -212,12 +212,21 @@ p {
     color: #fff;
 }
 
+#accommodations .row {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 #accommodations h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
     font-weight: 700;
 }
 
 .hotel-info {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -225,6 +234,53 @@ p {
 
 .hotel-info a:first-child {
     margin-right: 20px;
+}
+
+
+/*===================================
+    REGISTRY
+===================================*/
+
+#registry {
+    padding: 70px 15px;
+    background: #fff;
+}
+
+#registry .row {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#registry .row .col-md-4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registry-logo {
+    margin: 15px auto;
+    max-width: 200px;
+}
+
+/*===================================
+    FOOTER
+===================================*/
+
+footer {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /*===================================
@@ -239,5 +295,9 @@ p {
 
     #reception .row {
         flex-direction: row-reverse;
+    }
+
+    #registy .col-md-4 {
+        text-align: center;
     }
 }
