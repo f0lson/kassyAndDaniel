@@ -1,7 +1,10 @@
-$('a[href*="#"]').on('click', function (e) {
-	e.preventDefault();
+const navLinks = document.querySelectorAll('.nav-link');
 
-	$('html, body').animate({
-		scrollTop: $($(this).attr('href')).offset().top
-	}, 500, 'linear');
+navLinks.forEach( link => {
+    link.addEventListener('click', (e) => {
+        let navMenu = document.querySelector('#navbarText');
+        if ( navMenu.classList.contains('show') ) {
+            navMenu.classList.remove('show');
+        }
+    });
 });
