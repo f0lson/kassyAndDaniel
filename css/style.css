@@ -157,6 +157,20 @@ p {
     font-size: 1.5rem;
 }
 
+
+/*===================================
+    OUR STORY
+===================================*/
+
+#story {
+    padding: 70px 0;
+}
+
+#story .section-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 /*===================================
     CEREMONY
 ===================================*/
