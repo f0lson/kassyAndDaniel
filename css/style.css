@@ -163,7 +163,7 @@ p {
 ===================================*/
 
 #story {
-    padding: 70px 0;
+    padding: 70px 10px;
 }
 
 #story .section-heading {
@@ -173,6 +173,10 @@ p {
 
 #story .row {
     margin-bottom: 30px;
+}
+
+#story p {
+    font-size: .9rem;
 }
 
 /*===================================
