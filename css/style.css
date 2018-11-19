@@ -328,4 +328,13 @@ footer p {
     #registy .col-md-4 {
         text-align: center;
     }
+
+    .registry-logo {
+        opacity: .7;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    .registry-logo:hover {
+        opacity: 1;
+    }
 }
