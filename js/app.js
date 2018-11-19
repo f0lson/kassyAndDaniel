@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $('.carousel').carousel({
+        interval: false
+    });
+
     // Add smooth scrolling on all links inside the navbar
     $("#navbarText a").on('click', function(event) {
         let navMenu = document.querySelector('#navbarText');

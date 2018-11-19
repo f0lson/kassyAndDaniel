@@ -163,7 +163,8 @@ p {
 ===================================*/
 
 #story {
-    padding: 70px 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #story .section-heading {
@@ -172,11 +173,16 @@ p {
 }
 
 #story .row {
-    margin-bottom: 30px;
+    margin: 0px auto 30px;
 }
 
 #story p {
     font-size: .9rem;
+}
+
+#carouselExampleIndicators {
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 /*===================================
